@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change H1 Text with Alert</title>
+</head>
+<body>
+  <h1 id="main-heading">Welcome!</h1>
+
+  <button onclick="changeHeading()">Change Text</button>
+
+  <script>
+    function changeHeading() {
+      // Show an alert and ask for input
+      var userInput = prompt("Enter new text for the heading:");
+      
+      // If the user enters something (not null)
+      if (userInput !== null) {
+        document.getElementById("main-heading").innerText = userInput;
+      }
+    }
+  </script>
+</body>
+</html>
